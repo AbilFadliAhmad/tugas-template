@@ -46,7 +46,7 @@ https://templatemo.com/tm-588-ebook-landing
 /* Base animation state */
 .section-animate {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(80px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   will-change: opacity, transform;
 }
