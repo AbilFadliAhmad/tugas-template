@@ -913,8 +913,9 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: rgb(247, 142, 142);
   border-radius: var(--border-radius-large);
+  border: 1px solid black;
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   display: block;
