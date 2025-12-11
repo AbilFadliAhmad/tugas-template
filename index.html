@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>ebook landing page template</title>
+    <title>Streamify</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +21,31 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="css/templatemo-ebook-landing.css" rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // animasi hanya sekali
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+          }
+        );
+
+        sections.forEach((section) => {
+          section.classList.add("section-animate");
+          observer.observe(section);
+        });
+      });
+    </script>
+
     <!--
 
 TemplateMo 588 ebook landing
@@ -367,7 +392,7 @@ https://templatemo.com/tm-588-ebook-landing
                   </div>
 
                   <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                    <button style="background-color: rgb(247, 126, 126);" type="submit" class="form-control">Kirim Pesan</button>
+                    <button style="background-color: rgb(247, 126, 126)" type="submit" class="form-control">Kirim Pesan</button>
                   </div>
                 </div>
               </form>
@@ -402,7 +427,7 @@ https://templatemo.com/tm-588-ebook-landing
 
               <p class="copyright-text">
                 © 2025 Hubungi Saya <br /><br />
-                <a style="color: white;" rel="nofollow" href="https://templatemo.com" target="_blank">desain oleh templatemo</a>
+                <a style="color: white" rel="nofollow" href="https://templatemo.com" target="_blank">desain oleh templatemo</a>
               </p>
             </div>
           </div>
